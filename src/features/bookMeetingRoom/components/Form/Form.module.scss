@@ -1,0 +1,43 @@
+.formWrapper {
+  & > div {
+    margin-bottom: 10px;
+  }
+
+  min-width: 200px;
+  max-width: 400px;
+
+  //height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .timeRangeLabel {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+
+  .timeRange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .buttons {
+    & > button {
+      box-sizing: border-box;
+      width: 49%;
+    }
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
